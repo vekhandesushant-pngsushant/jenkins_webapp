@@ -15,7 +15,13 @@ phases:
   post_build:
     commands:
       - echo build completed on 'date'
-
+      - mkdir deplay
+      - cp -r dist deplay/dist
+      - mv appspec.yaml appspec.yml
+      - cp appspec.yml deplay/
+      - cp -r scripts deplay/
+      - chmod +x deplay/scripts/restartnginx.sh
+      - chmod +x deplay/scripts/aapstop.sh
 artifacts:
   files:
      - '**/*'
