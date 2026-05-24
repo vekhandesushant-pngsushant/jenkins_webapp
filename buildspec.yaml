@@ -20,7 +20,7 @@ phases:
       - mv appspec.yaml appspec.yml
       - cp appspec.yml deplay/
       - cp -r scripts deplay/
-      - chmod +x deplay/scripts/restartnginx.sh
+      - chmod +x deplay/scripts/restartNginx.sh
       - chmod +x deplay/scripts/aapstop.sh
 artifacts:
   files:
