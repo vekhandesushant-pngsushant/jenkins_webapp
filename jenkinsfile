@@ -84,7 +84,7 @@ pipeline{
         ACCESS_KEY_ID = credentials('ACCESS_KEY_ID')
         SECRET_ACCESS_KEY = credentials('SECRET_ACCESS_KEY')
         CLUSTER_NAME = 'default'
-        SERVICE_NAME = 'frontend-5f3b'
+        SERVICE_NAME = 'frontend-5449'
     }
     stages{
         stage('Checkout'){
